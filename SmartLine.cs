@@ -5,6 +5,25 @@ namespace WaitingLineSystem
 {
     public class SmartLine
     {
+        private static SmartLine _instance;
+        
+        private SmartLine() 
+        {
+
+        }
+        //Singleton Pattern
+        public static SmartLine Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new SmartLine();
+                }
+                return _instance;
+            }
+        }
+
         // initialize an Empty Line  
         private List<int> Line = new List<int>();
         

@@ -8,7 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WaitingLineSystem.Logic_Layer;
+using WaitingLineSystem;
 
 namespace WaitingLineSystem.Forms
 {
@@ -17,6 +17,7 @@ namespace WaitingLineSystem.Forms
         public MainForm()
         {
             InitializeComponent();
+            var smartLine = SmartLine.Instance;
         }
 
         private void AdminBtn_Click(object sender, EventArgs e)
