@@ -5,35 +5,38 @@ namespace WaitingLineSystem
 {
     public class SmartLine
     {
-        // List to maintain the line
-        private List<int> line = new List<int>();
-        private int nextPersonTicket = 2; // Next ticket number for regular person
-        private int nextHandicappedTicket = 1; // Next ticket number for handicapped person
+        // initialize an Empty Line  
+        private List<int> Line = new List<int>();
+        
+        //Next Ticket Number
+        private int NextPersonTicket = 2; 
+        private int NextHandicappedTicket = 1; 
 
-        // Add a person to the line with the next available even ticket number
+        // Add a person to the line with the next even ticket number
         public void AddPerson()
         {
-            line.Add(nextPersonTicket);
-            nextPersonTicket += 2;
+            Line.Add(NextPersonTicket);
+            NextPersonTicket += 2;
         }
 
-        // Add a handicapped person to the line with the next available odd ticket number
+        // Add a handicapped person to the line with the next odd ticket number
         public void AddHandicapped()
         {
-            line.Insert(0, nextHandicappedTicket); // Handicapped person goes to the front of the line
-            nextHandicappedTicket += 2;
+            // give Piorty for handicapped
+            Line.Insert(0, NextHandicappedTicket); 
+            NextHandicappedTicket += 2;
         }
 
-        // Return the ticket number of the next person in line without removing them
+        // Next turn in list (Will return odd ticket number if any )
         public int NextTurn()
         {
-            if (line.Count == 0)
+            if (Line.Count == 0)
             {
-                return -1; // Indicating no one is in line
+                return 0; 
             }
 
-            int nextPerson = line[0];
-            line.RemoveAt(0); // Remove the first person in line
+            int nextPerson = Line[0];
+            Line.RemoveAt(0); 
             return nextPerson;
         }
     }
