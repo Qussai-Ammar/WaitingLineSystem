@@ -21,13 +21,13 @@ namespace WaitingLineSystem.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             SmartLine.Instance.AddHandicapped();
-            MessageBox.Show(SmartLine.Instance.GetTicketNumber().ToString());
+            MessageBox.Show("Ticket Number: "+SmartLine.Instance.GetTicketNumber().ToString());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SmartLine.Instance.AddPerson();
-            MessageBox.Show(SmartLine.Instance.GetTicketNumber().ToString());
+            MessageBox.Show("Ticket Number: "+SmartLine.Instance.GetTicketNumber().ToString());
 
         }
     }
