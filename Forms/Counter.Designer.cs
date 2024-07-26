@@ -48,11 +48,11 @@
             // 
             CoNum.AutoSize = true;
             CoNum.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CoNum.Location = new Point(444, 20);
+            CoNum.Location = new Point(418, 20);
             CoNum.Name = "CoNum";
-            CoNum.Size = new Size(41, 65);
+            CoNum.Size = new Size(69, 65);
             CoNum.TabIndex = 1;
-            CoNum.Text = " ";
+            CoNum.Text = " 1";
             // 
             // textBox1
             // 
@@ -64,6 +64,7 @@
             textBox1.Size = new Size(482, 135);
             textBox1.TabIndex = 2;
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Counter
             // 
@@ -76,6 +77,7 @@
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Counter";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Counter";
             Load += Counter_Load;
             ResumeLayout(false);

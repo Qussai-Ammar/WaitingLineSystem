@@ -16,7 +16,7 @@ namespace WaitingLineSystem
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
 
-            LineManagement Lm = new LineManagement();
+            
 
         }
     }

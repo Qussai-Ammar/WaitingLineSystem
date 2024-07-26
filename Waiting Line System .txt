@@ -7,11 +7,11 @@ Forms:
     - Turn Form
 
 Methods: 
-    - Add Visitor 
-    - Add handicap
+    - Add Visitor 			    [done]
+    - Add handicap			    [done]
     - Average time
-    - Next turn 
-    - Empty list
+    - Next turn 			    [done]
+    - Empty list			    [done]
 --------------------------------------------------
 #Front end 
 
@@ -20,19 +20,17 @@ Main Page: 				    [done]
    - Visitor Page Button 		    [done]
 Admin page: 				    [done]
     - Next turn Button                      [done]
-    - Average time                          [done]
+    - Average time                          [hidden]
     - Reset Button                          [done]
     - Visitors Count                        [done]
 Visitor Page: 				    [done]
    - Add Handicap Button   		    [done]
    - Add Visitor  Button 		    [done]
-Now Serving Page: 				    
-   - Now Serving info   		    
-   - Counter Number 		    
+Now Serving Page: 			    [done]	    
+   - Now Serving info   		    [done]
+   - Counter Number 		    	    [done]
 
 
 --------------------------------------------------
-
-Bugs yet: 
 
    

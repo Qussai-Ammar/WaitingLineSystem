@@ -15,6 +15,20 @@ namespace WaitingLineSystem.Forms
         public VisitorForm()
         {
             InitializeComponent();
+            var smartLine = SmartLine.Instance;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SmartLine.Instance.AddHandicapped();
+            MessageBox.Show(SmartLine.Instance.GetTicketNumber().ToString());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SmartLine.Instance.AddPerson();
+            MessageBox.Show(SmartLine.Instance.GetTicketNumber().ToString());
+
         }
     }
 }

@@ -15,10 +15,18 @@ namespace WaitingLineSystem.Forms
         public Counter()
         {
             InitializeComponent();
+            textBox1.Text = SmartLine.Instance.GetTurn().ToString();
+
         }
 
         private void Counter_Load(object sender, EventArgs e)
         {
+            textBox1.Text = SmartLine.Instance.GetTurn().ToString();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = SmartLine.Instance.GetTurn().ToString();
 
         }
     }

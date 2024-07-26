@@ -54,6 +54,7 @@
             NextBtn.TabIndex = 0;
             NextBtn.Text = "Next";
             NextBtn.UseVisualStyleBackColor = true;
+            NextBtn.Click += NextBtn_Click;
             // 
             // ResetBtn
             // 
@@ -64,6 +65,7 @@
             ResetBtn.TabIndex = 1;
             ResetBtn.Text = "Reset";
             ResetBtn.UseVisualStyleBackColor = true;
+            ResetBtn.Click += ResetBtn_Click;
             // 
             // ExitBtn
             // 
@@ -74,6 +76,7 @@
             ExitBtn.TabIndex = 2;
             ExitBtn.Text = "Exit";
             ExitBtn.UseVisualStyleBackColor = true;
+            ExitBtn.Click += ExitBtn_Click;
             // 
             // label1
             // 
@@ -129,6 +132,7 @@
             Averge.Name = "Averge";
             Averge.Size = new Size(347, 64);
             Averge.TabIndex = 3;
+            Averge.Visible = false;
             // 
             // Average
             // 
@@ -139,6 +143,7 @@
             Average.Size = new Size(236, 30);
             Average.TabIndex = 2;
             Average.Text = "Average Waiting Time:";
+            Average.Visible = false;
             // 
             // OnWaiting
             // 
@@ -149,6 +154,7 @@
             OnWaiting.Name = "OnWaiting";
             OnWaiting.Size = new Size(347, 64);
             OnWaiting.TabIndex = 1;
+            OnWaiting.TextChanged += OnWaiting_TextChanged;
             // 
             // label2
             // 
