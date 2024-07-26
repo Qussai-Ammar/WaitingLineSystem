@@ -1,0 +1,38 @@
+Waiting Line System: 
+
+Forms: 
+    - Main Form
+    - Admin Form 
+    - Visitor Form 
+    - Turn Form
+
+Methods: 
+    - Add Visitor 
+    - Add handicap
+    - Average time
+    - Next turn 
+    - Empty list
+--------------------------------------------------
+#Front end 
+
+Main Page: 				    [done]
+   - Admin page Button   		    [done]
+   - Visitor Page Button 		    [done]
+Admin page: 				    [done]
+    - Next turn Button                      [done]
+    - Average time                          [done]
+    - Reset Button                          [done]
+    - Visitors Count                        [done]
+Visitor Page: 				    [done]
+   - Add Handicap Button   		    [done]
+   - Add Visitor  Button 		    [done]
+Now Serving Page: 				    
+   - Now Serving info   		    
+   - Counter Number 		    
+
+
+--------------------------------------------------
+
+Bugs yet: 
+
+   
